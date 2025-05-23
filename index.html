@@ -27,6 +27,9 @@
         theme: {
           extend: {
             screens: {
+              desktop_4k: '3840px',
+              desktop_2k: '2560px',
+              desktop_1k: '1920px',
               desktop: '1440px',
               tablet: '768px',
               mobile: '375px'
@@ -39,9 +42,11 @@
   <body>
     <!-- Add your site or application content here -->
     <div
-      class="mobile:h-[812px] mobile:w-[375px] tablet:h-[1024px] tablet:w-[768px] desktop:h-[768px] desktop:w-[1440px] flex flex-col items-center bg-gradient-to-b from-gray-50 to-[#d2d6db] py-[200px]"
+      class="h-screen mobile:w-[375px] tablet:w-[768px] desktop:w-[1440px] desktop_1k:w-[1920px] desktop_2k:w-[2560px] desktop_4k:w-[3840px] flex flex-col items-center bg-gradient-to-b from-gray-50 to-[#d2d6db] py-[200px]"
     >
-      <div class="w-[340px] flex flex-col gap-4 bg-white p-6 rounded-lg shadow-md">
+      <div
+        class="w-[340px] flex flex-col gap-4 bg-white p-6 rounded-lg shadow-sm"
+      >
         <div class="flex items-center gap-4 self-stretch">
           <div class="w-12 h-12">
             <img
